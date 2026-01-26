@@ -1,12 +1,30 @@
-# Python-generated files
+# Python
+*.pyc
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-*.parquet
-*.csv
-# Virtual environments
-.venv
-ny_taxi_postgres_data/
+*.pyo
+*.pyd
+venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Database files
+*.db
+
+# Exclude entire directories
+ny_taxi_postgres_data/  # Replace with the directory you want to exclude
+another_dir/  # Add more directories as needed
