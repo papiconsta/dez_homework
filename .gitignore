@@ -28,3 +28,4 @@ Thumbs.db
 # Exclude entire directories
 ny_taxi_postgres_data/  # Replace with the directory you want to exclude
 another_dir/  # Add more directories as needed
+exercise_1/ny_taxi_postgres_data/
