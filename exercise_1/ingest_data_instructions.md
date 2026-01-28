@@ -19,7 +19,8 @@ docker run taxi-ingest \
   --network=pg-database \
   --target_dataset=./ny_taxi_postgres_data/green_tripdata_2025-11.parquet
 
-## docker build command
+## docker build command 
+# here we have a custom image , in that case we need the dockerfile to be set ( docker file must be in the same directory )
 docker build -t namecontainer:v[whatever] .
 
 ## after the container is build then
