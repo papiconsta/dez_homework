@@ -8,6 +8,8 @@ uv run python ingest_data.py
 --chunk_size=1000 
 --target_dataset=./ny_taxi_postgres_data/green_tripdata_2025-11.parquet
 
+
+
 ## containerized
 docker run taxi-ingest \
   --pg_user=root \
