@@ -12,10 +12,8 @@ Here are some of my notes from the Data Warehouse Section.
 
 ## OLAP vs OLTP
 ![alt text](image.png)
-
-<!-- Explanation -->
-
-### Concept 2
+### Data warehouse
+![alt text](image-2.png)
 
 <!-- Explanation -->
 
