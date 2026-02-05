@@ -2,17 +2,16 @@
 
 ## Overview
 
-<!-- Brief description of what this exercise covers -->
+Here are some of my notes from the Data Warehouse Section.
 
 ## Learning Outcomes
 
--
--
+- Understanding the Datawarehouse
+- 
 -
 
-## Key Concepts
-
-### Concept 1
+## OLAP vs OLTP
+![alt text](image.png)
 
 <!-- Explanation -->
 
