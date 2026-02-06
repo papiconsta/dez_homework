@@ -1,0 +1,35 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+venv/
+.env
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Database files
+*.db
+
+
+# Exclude entire directories
+ny_taxi_postgres_data/  # Replace with the directory you want to exclude
+another_dir/  # Add more directories as needed
+exercise_1/ny_taxi_postgres_data/
+exercise_2/flows/
+exercise_2/greentaxidez-bf5dc9e39238.json
