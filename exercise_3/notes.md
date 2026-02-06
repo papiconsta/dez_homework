@@ -19,20 +19,26 @@ Here are some of my notes from the Data Warehouse Section.
 
 ## Setup
 
-### Prerequisites
+### Steps
 
+For the following exercise I created a new uv enviroment
 ```bash
-# Commands to set up the environment
+# uv init
 ```
-
-### Configuration
-
+Next due to the script's dependencies I installed the google cloud storage package 
+```bash
+# uv add google-cloud-storage
+```
+Next step is to run the script
+```bash
+# uv run python load_yellow_taxi_data.py
+```
 <!-- Configuration details -->
 
-## Usage
+## Cloud Storage
 
-### Step 1
-
+Now that we have the files in our cloud storage in a bucket.Our next move is to import to BigQuery.
+![alt text](image-3.png)
 ```bash
 # Command
 ```
