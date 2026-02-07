@@ -79,20 +79,42 @@ PARTITION BY
 SELECT * FROM taxi-rides-ny.nytaxi.external_yellow_tripdata;
 ```
 
-## Questions & Answers
+Now sence we created the partition table the next things that we have to do is to compare partitioned vs non partitioned.
 
-### Q1:
+### the paritioned one : 
+![alt text](image-7.png)
+![alt text](image-6.png)
 
-**Answer:**
+### non paritioned one:
+![alt text](image-8.png)
+![alt text](image-9.png)
 
-### Q2:
+### Checking inside the partitions
+This is how we check the partitions happend inside our BQ Partitioned table.
+![alt text](image-10.png)
+```SQL
 
-**Answer:**
+SELECT table_name, partition_id, total_rows
+FROM `dezoomcamp_hw3_2026_consta.INFORMATION_SCHEMA.PARTITIONS`
+WHERE table_name = 'nytaxi_partitioned'
+ORDER BY total_rows DESC;
 
-## Resources
+```
 
-- [Link description](url)
+## Clustering vs Partitioning
 
-## Notes
+Criterias!
+![alt text](image-14.png)
+(Tip to remember: Partitioning can be done in one column. On clustering happens to multiple columns)
 
+
+``` SQL
+-- Creating a partition and cluster table
+CREATE OR REPLACE TABLE greentaxidez.dezoomcamp_hw3_2026_consta.nytaxi_partitioned_clustered
+PARTITION BY DATE(tpep_pickup_datetime)
+CLUSTER BY VendorID AS
+SELECT * FROM greentaxidez.dezoomcamp_hw3_2026_consta.external_nytaxi;
+```
+![alt text](image-13.png)
+![alt text](image-11.png)
 <!-- Additional notes and observations -->
