@@ -3,7 +3,7 @@
 ### Question 1
 What is count of records for the 2024 Yellow Taxi Data?
 
-![alt text](image-15.png)
+![alt text](images/image-15.png)
 
 so the answer is : 20,332,093
 
@@ -17,15 +17,15 @@ For the Materialized (native) Table, BigQuery can accurately estimate the scan s
 
 0 MB for the External Table and 155.12 MB for the Materialized Table
 
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 
 ### Question 3
 
 
 ANS:
 BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.
-![alt text](image-18.png)
-![alt text](image-17.png)
+![alt text](images/image-18.png)
+![alt text](images/image-17.png)
 
 ### Question 4
 
@@ -33,7 +33,7 @@ BigQuery is a columnar database, and it only scans the specific columns requeste
 ``` SQL
 select count (*) from `dezoomcamp_hw3_2026_consta.nytaxi_internal` where fare_amount = 0.0
 ```
-![alt text](image-19.png)
+![alt text](images/image-19.png)
 
 ### Question 5
 
