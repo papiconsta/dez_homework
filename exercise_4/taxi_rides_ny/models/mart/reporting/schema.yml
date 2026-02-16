@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: monthly_revenue_per_location
+    columns:
+      - name: payment_type
+        tests:
+          - payment_accepted_values

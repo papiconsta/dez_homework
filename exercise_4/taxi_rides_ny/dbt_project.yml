@@ -1,0 +1,23 @@
+name: 'taxi_rides_ny'
+version: '1.0.0'
+config-version: 2
+
+profile: 'taxi_rides_ny'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  taxi_rides_ny:
+    +materialized: view
+
+flags:
+  require_generic_test_arguments_property: true
