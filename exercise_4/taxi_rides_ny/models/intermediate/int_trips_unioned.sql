@@ -1,6 +1,8 @@
 -- Union green and yellow taxi data into a single dataset
 -- Demonstrates how to combine data from multiple sources with slightly different schemas
 
+{{ config(materialized='view') }}
+
 with green_trips as (
     select
         vendor_id,

@@ -4,14 +4,12 @@ sources:
     database: |
       {%- if target.type == 'bigquery' -%}
         {{ env_var('GCP_PROJECT_ID', 'please-add-your-gcp-project-id-here') }}
-      {%- else -%}
-        taxi_rides_ny
       {%- endif -%}
     schema: |
       {%- if target.type == 'bigquery' -%}
         nytaxi
       {%- else -%}
-        prod
+        main
       {%- endif -%}
     freshness:
       warn_after: {count: 24, period: hour}
@@ -59,6 +57,25 @@ sources:
             description: Trip type (1=Street-hail, 2=Dispatch)
           - name: ehail_fee
             description: E-hail fee
+
+      - name: fhv_tripdata
+        description: Raw For-Hire Vehicle trip records
+        loaded_at_field: pickup_datetime
+        columns:
+          - name: dispatching_base_num
+            description: TLC base license number of the dispatching base
+          - name: pickup_datetime
+            description: Date and time of the trip pickup
+          - name: dropOff_datetime
+            description: Date and time of the trip dropoff
+          - name: PUlocationID
+            description: TLC Taxi Zone where the trip began
+          - name: DOlocationID
+            description: TLC Taxi Zone where the trip ended
+          - name: SR_Flag
+            description: Shared ride flag (1 = shared ride)
+          - name: Affiliated_base_number
+            description: TLC base license number of the affiliated base
 
       - name: yellow_tripdata
         description: Raw yellow taxi trip records

@@ -1,10 +1,4 @@
-{{
-  config(
-    materialized='incremental',
-    unique_key='trip_id',
-    incremental_strategy='merge',
-    on_schema_change='append_new_columns'  )
-}}
+{{ config(materialized='view') }}
 
 -- Fact table containing all taxi trips enriched with zone information
 -- This is a classic star schema design: fact table (trips) joined to dimension table (zones)

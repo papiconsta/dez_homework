@@ -2,6 +2,8 @@
 -- Demonstrates enrichment and surrogate key generation
 -- Note: Data quality analysis available in analyses/trips_data_quality.sql
 
+{{ config(materialized='view') }}
+
 with unioned as (
     select * from {{ ref('int_trips_unioned') }}
 ),
