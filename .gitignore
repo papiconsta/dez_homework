@@ -37,3 +37,4 @@ exercise_1/ny_taxi_postgres_data/
 exercise_2/flows/
 exercise_2/greentaxidez-bf5dc9e39238.json
 exercise_3/*.json
+exercise_4/taxi_rides_ny/*.duckdb
