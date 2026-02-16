@@ -1,4 +1,4 @@
-## These are my findings and solutions for Data engineering bootcamp exercise 3
+## These are my findings and solutions for Data engineering bootcamp exercise 4
 
 ### Question 1. dbt Lineage and Execution
 If you run dbt run --select int_trips_unioned, what models will be built?
