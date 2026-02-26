@@ -38,3 +38,7 @@ exercise_2/flows/
 exercise_2/greentaxidez-bf5dc9e39238.json
 exercise_3/*.json
 exercise_4/taxi_rides_ny/*.duckdb
+.bruin.yml
+logs/runs
+logs/*.log
+*.py[cod]
