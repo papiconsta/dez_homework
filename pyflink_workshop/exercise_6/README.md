@@ -1,4 +1,4 @@
-# Module 7 Homework — PyFlink (Questions 4–6)
+# Module 7 Homework — Kafka
 
 ## Question 1. Redpanda version
 
